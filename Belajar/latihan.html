@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="INTCY8 is a cutting-edge technology">
+
+    <title>INTCY8</title>
+
+    <style>
+        /* Pengaturan dasar */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: #e8f7ff;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Logo berada di tengah */
+        .gambar-tengah {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 5px;
+        }
+
+        .gambar-tengah img {
+            width: 350px;
+            max-width: 90%;
+            height: auto;
+        }
+
+        /* Container tulisan berjalan */
+        .tulisan-berjalan {
+            width: 100%;
+            overflow: hidden;
+            background-color: #006994;
+            padding: 15px 0;
+        }
+
+        /* Tulisan */
+        .teks {
+            display: inline-block;
+            white-space: nowrap;
+
+            font-size: 35px;
+            font-weight: bold;
+
+            text-shadow: 0 0 10px white;
+
+            /* Animasi berjalan + berkedip + berubah warna */
+            animation:
+                jalan 15s linear infinite,
+                kedip 1s infinite,
+                warna 3s infinite;
+        }
+
+        /* Animasi tulisan berjalan */
+        @keyframes jalan {
+            from {
+                transform: translateX(100%);
+            }
+
+            to {
+                transform: translateX(-100%);
+            }
+        }
+
+        /* Animasi berkedip */
+        @keyframes kedip {
+            0%,
+            100% {
+                opacity: 1;
+            }
+
+            50% {
+                opacity: 0.2;
+            }
+        }
+
+        /* Animasi perubahan warna */
+        @keyframes warna {
+            0% {
+                color: white;
+            }
+
+            25% {
+                color: yellow;
+            }
+
+            50% {
+                color: #00ffff;
+            }
+
+            75% {
+                color: #90ee90;
+            }
+
+            100% {
+                color: white;
+            }
+        }
+
+        .login-container {
+            width: 350px;
+            margin: 40px auto;
+            padding: 30px;
+
+            background: white;
+            border-radius: 15px;
+
+            box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+
+            text-align: center;
+        }
+
+        .login-container h2 {
+            color: #006994;
+            margin-bottom: 20px;
+        }
+
+        .login-container input {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 15px;
+
+            border: 1px solid #ccc;
+            border-radius: 8px;
+
+            font-size: 16px;
+        }
+
+        .login-container button {
+            width: 100%;
+            padding: 12px;
+
+            border: none;
+            border-radius: 8px;
+
+            background: #006994;
+            color: white;
+
+            font-size: 16px;
+            font-weight: bold;
+
+            cursor: pointer;
+        }
+
+        .login-container button:hover {
+            background: #004d6d;
+        }
+
+        .pr{
+            color:red;
+        }
+        .tw{
+            color:blue
+        }
+        .negara{
+            color:coral;
+        }
+        .memanggil{
+            color: brown;
+        }
+        .ayo{
+            color:pink; 
+        }    
+
+        .text-bawah-judul { 
+        }
+        .kotak-utama{
+            display: flex;
+            justify-content: center;
+        }
+        .kotak-1{
+            border: 1px solid black
+        }
+        .kotak-2{
+            border: 1px solid red;
+        }
+        .kotak-3{
+            border: 1px solid blue;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <h1 class="pr">hello <span class="tw">world</span></h1>
+    <p>
+        <span class="negara">NEGARA</span>
+        <span class="memanggil">MEMANGGILMU</span>
+        <span class="ayo">Ayoo, Daftarkan dirimu Segera....!!</span>  
+    </p>
+
+    <!-- Tulisan berjalan -->
+    <div class="tulisan-berjalan">
+        <div class="teks">
+            Selamat Datang — SHIDHEM BHAKTI JALAMAYA
+        </div>
+    </div>
+    
+    <!-- Logo -->
+    <div class="gambar-tengah">
+        <img src="Logo.png" alt="Siber 8 Logo">
+    </div>
+    
+<!-- Form Login -->
+<div class="login-container">
+
+    <h2>Login INTCY8</h2>
+
+    <form onsubmit="login(event)">
+
+        <input
+            type="text"
+            id="username"
+            placeholder="Username"
+            required>
+
+        <input
+            type="password"
+            id="password"
+            placeholder="Password"
+            required>
+
+        <button type="submit">
+            Login
+        </button>
+
+    </form>
+
+</div>
+
+        <div class="kotak-utama">
+            <div class="kotak-1">
+                taruna akademi tni
+            </div>
+                
+            <div class="kotak-2">
+                psdp penerbang tni
+            </div>
+
+            <div class="kotak-3">
+                pa pk tni reguler gel 1
+            </div>
+            
+
+
+        </div>
+
+</body>
+
+</html>
+
